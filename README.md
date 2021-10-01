@@ -1,3 +1,3 @@
 # Listas
-Listas de atividades da faculdade
+Listas da Faculdade
 1 Período
