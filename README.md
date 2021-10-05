@@ -1,3 +1,2 @@
 # Listas
-Listas da Faculdade
-1 Período
+Listas da Faculdade - 1 Período
