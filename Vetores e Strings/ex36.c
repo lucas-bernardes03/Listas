@@ -46,4 +46,7 @@ void intercalar(int q1, int q2){
     }
 
     for(i=0;i<=len;i++) printf("%d\n",vet_ord[i]);
+    free(vet1);
+    free(vet2);
+    free(vet_ord);
 }

@@ -95,4 +95,8 @@ void op_conj(int ta, int tb){
         printf(")\n");
     }
 
+    free(cja);
+    free(cjb);
+    free(uniao);
+    free(intrsc);
 }

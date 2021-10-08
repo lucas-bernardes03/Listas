@@ -50,4 +50,6 @@ void countSort(int * vet, int n, int maior){
     }
 
     for(i=0;i<n;i++) vet[i] = ord[i];
+    free(count);
+    free(ord);
 }
