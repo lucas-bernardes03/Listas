@@ -1,44 +1,35 @@
 #include <stdio.h>
 
-void swap(int m, int n);
-
 int main(){
     int m,n;
-    scanf("%d %d",&m,&n);
-    swap(m,n);
-    return 0;
-}
-
-void swap(int m, int n){
     int mat[1000][1000];
-    int i,j,maior,menor;
-    int index[4];
+    int i,j,max,min;
 
+    scanf("%d %d",&m,&n);
     for(i=0;i<m;i++) for(j=0;j<n;j++) scanf("%d",&mat[i][j]);
 
-    maior = mat[0][0];
-    menor = mat[0][0];
+    max = mat[0][0];
+    min = mat[0][0];
 
-    for(i=0;i<m;i++) {
+    for(i=0;i<m;i++){
         for(j=0;j<n;j++){
-           if(mat[i][j] > maior){
-                maior = mat[i][j];
-                index[0] = i;
-                index[1] = j;
-           } 
-           if(mat[i][j] < menor){
-                menor = mat[i][j]; 
-                index[2] = i;
-                index[3] = j;
-           } 
+            if(max > mat[i][j]) max = mat[i][j];
+            else if(min < mat[i][j]) min = mat[i][j];
+        }
+    } 
+
+    for(i=0;i<m;i++){
+        for(j=0;j<n;j++){
+            if(mat[i][j] == max) mat[i][j] = min;
+            else if (mat[i][j] == min) mat[i][j] = max;
         }
     }
-
-    mat[index[2]][index[3]] = maior;
-    mat[index[0]][index[1]] = menor;
-
+    
     for(i=0;i<m;i++){
         for(j=0;j<n;j++) printf("%d ",mat[i][j]);
         printf("\n");
-    } 
+    }
+
+    return 0;
 }
+
