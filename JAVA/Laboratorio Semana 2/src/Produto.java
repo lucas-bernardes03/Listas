@@ -1,6 +1,3 @@
-//LUCAS BERNARDES FEITOSA
-//MATRICULA 202204198
-
 import java.text.DecimalFormat;
 
 public class Produto {

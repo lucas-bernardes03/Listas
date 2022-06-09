@@ -1,6 +1,3 @@
-//LUCAS BERNARDES FEITOSA   
-//MATRICULA 202204198
-
 import java.util.Scanner;
 
 public class Main {
